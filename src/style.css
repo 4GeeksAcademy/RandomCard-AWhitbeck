@@ -1,1 +1,64 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+div {
+  border: 0px;
+  border-color: red;
+  border-style: dotted;
+}
+
+body {
+  background-color: rgb(1, 97, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  border: 1px solid #1e1e1e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  position: relative;
+  padding: 0px 7px 0px 7px;
+  box-sizing: border-box;
+}
+
+.card .suit {
+  font-size: 30px;
+}
+
+.top-suit {
+  align-self: flex-start;
+}
+
+.bottom-suit {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
+
+.hearts .suit,
+.diamonds .suit {
+  color: red;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
